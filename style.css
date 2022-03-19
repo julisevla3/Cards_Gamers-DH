@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #130d2af2;
+}
+
+header img {
+  width: 200px;
+  height: auto;
+  filter: opacity(80%) brightness(0.5) contrast(1.4);
+}
+
+.banner {
+  width: 100%;
+}
+
+.h2text {
+  font-size: 70px;
+  color: white;
+  font-weight:lighter;
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 220px;
+  animation: h2text 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+
+
+.flex-container {
+    display: flex;    
+    justify-content: space-around;     
+    padding: 15px;
+    gap: 5px;
+    position: relative;
+    bottom: 180px;
+  }
+
+  .flex-container > div{
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  
+  .rounded-circle{
+    border-radius: 50%;
+    width: 100px;
+    border: 6px solid white;
+  }
+
+  .item-img h5 {
+      color: white;
+      font-weight: 300;
+  }
+
+
+@keyframes h2text {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+/* Estilização Card Dinâmico */
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 40px 0 40px;
+    gap: 100px;
+}
+
+.card-img-top{
+    border: 6px solid white;
+}
+
+.card{
+  margin-bottom: 50px;
+}
+
+.card-text{
+    border: 6px solid white;
+}
+
+.hide{
+  color: white;
+}
+
+.btn-modal{animation:bounce-in-top 2s 2s both}
+@keyframes bounce-in-top{0%{transform:translateY(-500px);animation-timing-function:ease-in;opacity:0}38%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}55%{transform:translateY(-65px);animation-timing-function:ease-in}72%{transform:translateY(0);animation-timing-function:ease-out}81%{transform:translateY(-28px);animation-timing-function:ease-in}90%{transform:translateY(0);animation-timing-function:ease-out}95%{transform:translateY(-8px);animation-timing-function:ease-in}100%{transform:translateY(0);animation-timing-function:ease-out}}
+
+.btn-modal {
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+.btn-modal:hover {
+	background-color:#1e62d0;
+}
+.btn-modal:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+/* Media */
+@media screen and (max-width: 1280px) {
+
+  
+    .h2text {
+        bottom: 240px;
+    }
+  }
+
+@media screen and (max-width: 770px) {
+
+  
+    .h2text {
+        bottom: 150px;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+  .header,
+  .principal,
+  .mapa-conteudo,
+  .conteudo-motivos,
+  .video {
+    width: auto;
+  }
+
+  .h2text {
+    font-size: 30px;
+    bottom: 70px;
+  }
+
+  .flex-container {
+    bottom: 100px;
+  }
+
+  .rounded-circle{
+    width: 70px;
+  }
+}
+
+

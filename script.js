@@ -7,11 +7,12 @@ let valor=document.getElementById('valor').value;
 let qtd=document.getElementById('quantidade').value;
 
     let novaDiv = document.createElement('div');
+    novaDiv.classList.add('main-div');
     novaDiv.innerHTML = `
         <div class="card" style="width: 18rem;">
         <img src="${url}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h1>${nome}</h1>
+                <h2>${nome}</h2>
                 <p class="card-text">${desc}</p>
                 <p>${"R$:"+valor+",00"}</p>
                 <p>"Quantidade em estoque: "${qtd}</p>
