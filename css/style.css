@@ -36,7 +36,7 @@ header img {
     padding: 15px;
     gap: 5px;
     position: relative;
-    bottom: 180px;
+    bottom: 150px;
   }
 
   .flex-container > div{
@@ -53,6 +53,10 @@ header img {
     border-radius: 50%;
     width: 100px;
     border: 6px solid white;
+  }
+
+  .rounded-circle:hover {
+    filter: opacity(80%);
   }
 
   .item-img h5 {
@@ -80,8 +84,9 @@ header img {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 20px 40px 0 40px;
-    gap: 100px;
+    margin: 20px 40px 150px 40px;
+    gap: 80px;
+
 }
 
 .card-img-top{
