@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -98,13 +100,14 @@ header img {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
     margin: 20px 40px 150px 40px;
     gap: 80px;
-   
 }
 
+
 .card-img-top{
-    border: 6px solid black;
+    border: 6px solid white;
 }
 
 .card{
@@ -112,11 +115,11 @@ header img {
 }
 
 .card-text{
-    border: 6px solid black;
+    border: 6px solid white;
 }
 
 .hide{
-  color: black;
+  color:white;
 }
 
 .btn-modal{animation:bounce-in-top 2s 2s both}
@@ -332,6 +335,10 @@ img { max-width: 100%; }
 	margin-bottom: 10px;
 	line-height: 30px;
 	color: #eee;
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+  
+
 }
 
 .modal-body {
@@ -352,10 +359,6 @@ img { max-width: 100%; }
 .modal-body form .input-error {
 	border-color: #fd625e;
 }
-
-
-
-
 
 
 /***** Media queries *****/
@@ -393,4 +396,96 @@ only screen and (                min-resolution: 2dppx) {
     	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 181px 43px !important;
     }
 	
+}
+
+
+/* Estilização Footer */
+
+/* FOOTER TOP */
+#footer {
+  padding: 2em 2em;
+}
+
+#footer-top {
+  margin-bottom: 2em;
+}
+
+#footer-top,
+#footer-top i {
+  color: #fff;
+}
+
+#social-icons {
+  text-align: center;
+}
+
+#social-icons i {
+  margin-right: 1em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#social-icons i:hover {
+  color: #7a7a7a;
+}
+
+/* FOOTER DETAILS */
+#footer-details {
+  margin-bottom: 1em;
+}
+
+#news-container,
+#contact-container,
+#links-container {
+  padding: 0;
+  border: 0;
+  margin-bottom: 2em;
+}
+
+#footer-details h4 {
+  color: #fff;
+  margin-bottom: 1.5em;
+}
+
+#news-container input {
+  border-radius: 0;
+  border: none;
+}
+
+#links-container li {
+  margin-bottom: 0.5em;
+}
+
+#links-container a {
+  text-decoration: none;
+}
+
+#links-container a:hover {
+  color: #fff;
+}
+
+/* FOOTER BOTTOM */
+#footer-bottom {
+  border-top: 1px solid #7a7a7a;
+  padding-top: 1em;
+}
+
+#footer-bottom i {
+  color: #e61e10;
+}
+
+@media (min-width: 768px) {
+  #news-container {
+    padding-right: 2em;
+  }
+
+  #contact-container {
+    padding: 0 2em;
+    border-left: 1px solid #7a7a7a;
+    border-right: 1px solid #7a7a7a;
+  }
+
+  #links-container {
+    padding-left: 2em;
+  }
 }
