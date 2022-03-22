@@ -198,14 +198,19 @@ header img {
   }
 
   .msg {
-    height: 420px;
-    width: 480px;
+    height: 290px;
+    width: 350px;
 }
 
 .img{
   position: relative;
-  bottom: 230px;
+  bottom: 150px;
 }
+
+.msg h3, h4, h5 {
+  font-size: small;
+}
+
 }
 
 
