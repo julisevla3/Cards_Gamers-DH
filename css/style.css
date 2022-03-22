@@ -163,7 +163,17 @@ header img {
     .h2text {
         bottom: 150px;
     }
+
+    .msg1 {
+      display: flex;
+      flex-direction: column;
+
   }
+
+.msg {
+  height: 350px;
+}
+}
 
 @media screen and (max-width: 480px) {
   .header,
@@ -186,6 +196,16 @@ header img {
   .rounded-circle{
     width: 70px;
   }
+
+  .msg {
+    height: 420px;
+    width: 480px;
+}
+
+.img{
+  position: relative;
+  bottom: 230px;
+}
 }
 
 
