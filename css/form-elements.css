@@ -1,7 +1,8 @@
 
 input[type="text"], 
 textarea, 
-textarea.form-control {
+input,
+input.form-control, textarea.form-control {
 	height: 50px;
     margin: 0;
     padding: 0 20px;
