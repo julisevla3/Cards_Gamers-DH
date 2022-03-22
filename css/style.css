@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -293,6 +295,10 @@ img { max-width: 100%; }
 	margin-bottom: 10px;
 	line-height: 30px;
 	color: #eee;
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+  
+
 }
 
 .modal-body {
